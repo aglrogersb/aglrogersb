@@ -1,0 +1,30 @@
+#container {
+  margin: auto;
+  height: 600px;
+  width: 920px;
+}
+
+#header {
+  background-color: lightgray;
+  height: 70px;
+  width: 900px;
+  margin: 10px;
+  margin-bottom: 0px;
+  float: left;
+}
+
+#rightmenu {
+  background-color: lightgray;
+  height: 430px;
+  width: 290px;
+  margin: 10px;
+  float: right;
+}
+
+.leftitem {
+  background-color: lightgray;
+  height: 100px;
+  width: 600px;
+  margin: 10px 0px 0px 10px;
+  float: left;
+}
