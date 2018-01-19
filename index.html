@@ -5,23 +5,24 @@
   <head>
     <title>Eternal Ashes</title>
     <link rel="stylesheet" href="index_style.css" />
-    <link rel="shortcut icon" href="img/shield.ico" /> 
+    <link rel="shortcut icon" href="img/shield.ico" />
     <script src="game.js"></script>
+    <script src="data.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <div style="height: 100px; width: 85%;"><p>Eternal Ashes<span style="font-size: 15px; padding-left: 50px;">A Text-Based Adventure Game by Greg Rogers</span></p></div>
+    <div style="height: 100px; width: 85%; margin-bottom: 1%;"><p>Eternal Ashes<span style="font-size: 15px; padding-left: 50px;">A Text-Based Adventure Game by Greg Rogers</span></p></div>
     <div id="about" style="height: 100px; width: 7.5%"><p id="toolbar">About</p></div>
     <div id="help" style="height: 100px; width: 7.5%"><p id="toolbar">Help</p></div>
 
-    <div id="gamescreen" style="height: 84.5%; width: 100%; margin-top: 1%;">
+    <div id="menuscreen" style="height: 84.5%; width: 100%;">
 
       <p id="menu" style="font-size: 20px; padding: 50px 0px 0px 50px;">Enter name:</p>
-      <input type="text" id="playername" style="margin: 10px 0px 0px 50px"></input>
+      <input type="text" id="playername" style="margin: 10px 0px 0px 50px;"></input>
 
       <p id="menu" style="font-size: 20px; padding: 20px 0px 0px 50px;">Enter class:</p>
-      <select id="playerclass" style="margin: 10px 0px 0px 50px">
+      <select id="playerclass" style="margin: 10px 0px 0px 50px;">
         <option value "1">Knight</option>
         <option value "2">Mage</option>
         <option value "3">Warlock</option>
@@ -31,6 +32,12 @@
 
       <button id="submit" style="margin: 15px 0px 0px 50px; width: 72px;" onclick="gameStart()">Play</button>
 
+    </div>
+
+    <div id="mainscreen" style="height: 0px; width: 100%;">
+      <p id="roomTitle" style="font-size: 30px; padding: 20px 0px 0px 50px;">
+      <p id="roomText" style="font-size: 20px; padding: 20px 0px 0px 50px;">
+      <div id="roomChoices"></div>
     </div>
 
   </body>

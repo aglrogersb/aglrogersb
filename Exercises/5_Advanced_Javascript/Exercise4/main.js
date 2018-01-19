@@ -25,6 +25,8 @@ function SelectRoom(roomIndex)
 			roomSender = i + i;
 		}
 
+		console.log(roomIndex);
+
 		var theButton = "<button value='" + i + "' onClick=SelectRoom(" + (roomSender) + ")>" + roomArray[roomIndex].choices[i].text + "</button>";
 
 		document.getElementById("roomChoices").innerHTML += theButton;
